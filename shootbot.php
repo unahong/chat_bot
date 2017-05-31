@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				// 'text' => $text
-        'text' => 'ไม่คุย'
+        'text' => 'ไม่คุย'.$event['source']['userId']
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
